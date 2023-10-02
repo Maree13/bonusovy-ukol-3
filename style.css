@@ -1,0 +1,35 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --product-red: rgb(249, 30, 30);
+  --product-grey: rgb(245, 241, 241);
+  --product-blue: rgb(12, 86, 189);
+  --product-white: white;
+  --product-yellow: rgb(249, 237, 1);
+}
+
+.product-card {
+  width: 450px;
+  padding: 16px;
+  /* position: relative; */
+  /* border: 1px solid black; */
+}
+
+.product-image {
+  width: 100%;
+  padding: 20px 10px 20px 10px;
+}
+
+.product-order_container {
+  background-color: var(--product-grey);
+  padding: 15px;
+  border-radius: 0 0 5px 5px;
+}
