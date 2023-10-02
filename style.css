@@ -14,7 +14,7 @@ html {
   --product-grey: rgb(170, 164, 164);
   --product-blue: rgb(12, 86, 189);
   --product-white: white;
-  --product-yellow: rgb(249, 237, 1);
+  --product-yellow: rgb(249, 208, 1);
   --product-darkgrey: rgb(71, 69, 69);
   --product-black: black;
 }
@@ -94,4 +94,16 @@ html {
 
 .not-checked {
   color: var(--product-lightgrey);
+}
+
+.reviews-stars a {
+  color: inherit;
+  /* Zabezpečuje, že odkaz nebude meniť farbu textu. */
+  text-decoration: none;
+  /* Odoberie podčiarknutie odkazu. */
+}
+
+.review-info {
+  color: var(--product-grey);
+  text-decoration: underline;
 }
