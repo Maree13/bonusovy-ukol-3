@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
@@ -11,8 +16,18 @@
       <h1 class="product-name">Dekorační polštář KUGLEASK Ø40 modrá</h1>
       <span class="product-code">Skladová položka: 6822708</span>
       <!-- Tu by mala byt kratka kolma ciara -->
+      <div class="vertical-line"><hr /></div>
       <span class="reviews-stars"
-        ><a href="nejakyweb@com">x x x x x Celkem hodnocení: 10</a>
+        ><a href="nejakyweb@com"
+          ><div class="review-icon">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star not-checked"></span>
+          </div>
+          Celkem hodnocení: 10</a
+        >
       </span>
       <div class="image-container">
         <img
@@ -22,16 +37,14 @@
         />
       </div>
       <div class="product-order_container">
-        <button class="product-availability">
-          Zjistit dostupnost na prodejne
-        </button>
+        <button class="product-availability">Zjistit dostupnost</button>
         <!-- Tu bude vodorovna ciara -->
         <hr class="product-line" />
         <div class="product-discount">
           <span class="product-discount_info"
             >Akce platí do (včetně): 17.10.2023</span
           >
-          <button class="button-discount">Sleva 50%</button>
+          <span class="sticker-discount">Sleva 50%</span>
           <span class="product-price">200 Kč /ks</span>
           <span class="product-oldprice">399 Kč /ks</span>
         </div>

@@ -10,10 +10,13 @@ html {
 
 :root {
   --product-red: rgb(249, 30, 30);
-  --product-grey: rgb(245, 241, 241);
+  --product-lightgrey: rgb(245, 241, 241);
+  --product-grey: rgb(170, 164, 164);
   --product-blue: rgb(12, 86, 189);
   --product-white: white;
   --product-yellow: rgb(249, 237, 1);
+  --product-darkgrey: rgb(71, 69, 69);
+  --product-black: black;
 }
 
 .product-card {
@@ -29,7 +32,66 @@ html {
 }
 
 .product-order_container {
-  background-color: var(--product-grey);
+  background-color: var(--product-lightgrey);
   padding: 15px;
   border-radius: 0 0 5px 5px;
+}
+
+/* button - product availability*/
+
+.product-availability {
+  border: 1px solid;
+  border-radius: 5px;
+  width: 50%;
+  padding: 10px 5px;
+  margin: 15px 25%;
+  background-color: var(--product-darkgrey);
+  color: var(--product-white);
+  cursor: pointer;
+}
+
+.product-discount_info {
+  font-style: italic;
+}
+
+.sticker-discount {
+  border: 1px solid var(--product-red);
+  background-color: var(--product-red);
+  padding: 3px 10px;
+  display: block;
+  width: fit-content;
+}
+
+.vertical-line {
+  height: 50px;
+  /* alebo akákoľvek iná výška podľa potreby */
+  width: 1px;
+  background-color: black;
+  /* alebo akákoľvek iná farba podľa potreby */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* vertical line */
+.vertical-line {
+  display: inline-block;
+  height: 20px;
+  width: 1.5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* review star icons */
+
+.review-icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.checked {
+  color: var(--product-yellow);
+}
+
+.not-checked {
+  color: var(--product-lightgrey);
 }
