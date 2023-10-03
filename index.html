@@ -8,6 +8,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto+Mono&family=Roboto:ital,wght@0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
@@ -17,6 +23,7 @@
 
       <span class="product-code">Skladová položka: 6822708</span>
       <!-- Tu by mala byt kratka kolma ciara -->
+      <!-- Neviem uplne ako tu kolmu ciaru nastylovat, aby nebola akoby prerusovana-->
       <div class="vertical-line"><hr /></div>
       <span class="reviews-stars"
         ><a href="nejakyweb@com"
@@ -53,10 +60,20 @@
           <span class="product-oldprice">399 Kč /ks</span>
         </div>
         <div class="product-order">
-          <!-- <input class="product-numbers"> -->
-          <button class="order-button product-order_button">
-            Přidat do košíku
-          </button>
+          <!-- Formularovy prvok -->
+          <form class="form-container">
+            <input
+              class="formfield"
+              type="number"
+              name="quantity"
+              min="1"
+              step="1"
+              value="1"
+            />
+            <button class="order-button product-order_button">
+              Přidat do košíku
+            </button>
+          </form>
           <button class="order-button product-reservation_button">
             Rezervace klikni a vyzvedni
           </button>

@@ -19,13 +19,17 @@ html {
   --product-black: black;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .product-card {
-  /* width: 450px; */
+  width: 450px;
+  min-width: fit-content;
   width: 50%;
-  max-width: 800px;
   padding: 16px;
   position: relative;
-  /* border: 1px solid black; */
+  border: 1px solid var(--product-lightgrey);
 }
 
 .product-image {
@@ -57,25 +61,26 @@ html {
   color: var(--product-darkgrey)
 }
 
+/* Sticker discount - Nalepka obdelnikova */
+
 .sticker-discount {
   border: 1px solid var(--product-red);
   background-color: var(--product-red);
   padding: 3px 10px;
   display: block;
   width: fit-content;
-  margin: 10px 0 20px 0;
-  color: var(--product-white)
+  margin: 10px 0 5px 0;
+  color: var(--product-white);
+  font-weight: 700;
 }
 
-.vertical-line {
+/* .vertical-line {
   height: 50px;
-  /* alebo akákoľvek iná výška podľa potreby */
   width: 1px;
   background-color: black;
-  /* alebo akákoľvek iná farba podľa potreby */
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 /* vertical line */
 .vertical-line {
@@ -84,6 +89,7 @@ html {
   width: 1.5px;
   margin-left: 10px;
   margin-right: 10px;
+  background-color: var(--product-black);
 }
 
 /* review star icons */
@@ -118,16 +124,17 @@ html {
 .discount-sticker {
   background-color: var(--product-red);
   border-radius: 50%;
-  width: 3em;
-  height: 3em;
+  width: 70px;
+  height: 70px;
   text-align: center;
-  line-height: 3em;
+  line-height: 70px;
   font-size: larger;
   color: var(--product-white);
   position: absolute;
-  right: 20px;
-  top: 190px;
+  right: 30px;
+  top: 170px;
   margin-top: 50px;
+  font-weight: 700;
 }
 
 /* Obrazok */
@@ -138,9 +145,9 @@ html {
 
 /* Order buttons */
 .order-button {
-  display: block;
+  display: inline-block;
   text-align: center;
-  padding: 10px 15px 10px 15px;
+  padding: 10px 25px 10px 25px;
   margin: 10px auto;
   background-color: var(--product-yellow);
   border-radius: 5px;
@@ -150,16 +157,47 @@ html {
 
 .product-availability {
   background-color: var(--product-white);
+  display: block;
+  margin-bottom: 15px;
 }
 
 /* Product price - product discount */
 
 .product-price {
   font-size: 25px;
+  font-weight: 700;
 }
 
 .product-oldprice {
   text-decoration: line-through;
   color: var(--product-grey);
   display: block;
+}
+
+.form-container {
+  text-align: center;
+}
+
+.formfield {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid var(--product-grey);
+  border-radius: 5px;
+  margin-right: 5px;
+  width: 50px;
+}
+
+.product-reservation_button {
+  display: block;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.product-order_button {
+  font-weight: 700;
+}
+
+.product-reservation_info {
+  display: block;
+  text-align: center;
 }
