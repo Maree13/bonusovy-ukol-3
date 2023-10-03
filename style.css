@@ -20,9 +20,11 @@ html {
 }
 
 .product-card {
-  width: 450px;
+  /* width: 450px; */
+  width: 50%;
+  max-width: 800px;
   padding: 16px;
-  /* position: relative; */
+  position: relative;
   /* border: 1px solid black; */
 }
 
@@ -39,19 +41,20 @@ html {
 
 /* button - product availability*/
 
-.product-availability {
-  border: 1px solid;
+/* .product-availability {
+  border: 1px solid var(--product-grey);
   border-radius: 5px;
   width: 50%;
-  padding: 10px 5px;
+  padding: 7px 5px;
   margin: 15px 25%;
-  background-color: var(--product-darkgrey);
-  color: var(--product-white);
+  background-color: var(--product-yellow);
+  color: var(--product-black);
   cursor: pointer;
-}
+} */
 
 .product-discount_info {
   font-style: italic;
+  color: var(--product-darkgrey)
 }
 
 .sticker-discount {
@@ -60,6 +63,8 @@ html {
   padding: 3px 10px;
   display: block;
   width: fit-content;
+  margin: 10px 0 20px 0;
+  color: var(--product-white)
 }
 
 .vertical-line {
@@ -106,4 +111,55 @@ html {
 .review-info {
   color: var(--product-grey);
   text-decoration: underline;
+}
+
+/* Discount sticker - circle */
+
+.discount-sticker {
+  background-color: var(--product-red);
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  text-align: center;
+  line-height: 3em;
+  font-size: larger;
+  color: var(--product-white);
+  position: absolute;
+  right: 20px;
+  top: 190px;
+  margin-top: 50px;
+}
+
+/* Obrazok */
+
+.image-container {
+  margin-top: 20px;
+}
+
+/* Order buttons */
+.order-button {
+  display: block;
+  text-align: center;
+  padding: 10px 15px 10px 15px;
+  margin: 10px auto;
+  background-color: var(--product-yellow);
+  border-radius: 5px;
+  border: 1px solid var(--product-grey);
+  cursor: pointer;
+}
+
+.product-availability {
+  background-color: var(--product-white);
+}
+
+/* Product price - product discount */
+
+.product-price {
+  font-size: 25px;
+}
+
+.product-oldprice {
+  text-decoration: line-through;
+  color: var(--product-grey);
+  display: block;
 }
